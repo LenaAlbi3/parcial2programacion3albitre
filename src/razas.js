@@ -69,10 +69,9 @@ function updatePagination() {
   prevBtn.disabled = currentPage === 1;
   nextBtn.disabled = currentPage === totalPages;
   lastBtn.disabled = currentPage === totalPages;
-  paginationEl.style.display = totalPages > 1 ? "block" : "none";
+  paginationEl.style.display = totalPages > 1 ? "flex" : "none";
 }
 
-// Botones de navegación
 firstBtn.onclick = () => {
   currentPage = 1;
   renderPage();
@@ -95,7 +94,6 @@ lastBtn.onclick = () => {
   renderPage();
 };
 
-// Búsqueda por raza
 searchInput.addEventListener("keypress", (event) => {
   if (event.key === "Enter") {
     const query = searchInput.value.trim().toLowerCase();
