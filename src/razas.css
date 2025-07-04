@@ -30,10 +30,12 @@ h1{
     border-radius: 10px;
 }
 #pagination-buttons {
+    width: 100vw;
     margin-top: 20px;
-    display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 #pagination-buttons button {
     all: unset;
@@ -41,7 +43,7 @@ h1{
     background-color: var(--s-color);
     padding: 5px 15px;
     margin: 8px 18px;
-    width: 100px;
+    width: 40%;
     text-align: center;
     border-radius: 8px;
 }
@@ -58,6 +60,9 @@ h1{
   .character-card{
     width: 30%;
     height: 60vh;
+  }
+    #pagination-buttons button{
+    width: 19vw;
   }
 }
 
